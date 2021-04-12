@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kotlin1_HW1</string>
+    <string name="message">Please Type your message</string>
+    <string name="confirm">confirm</string>
+    <string name="cant_be_empty">The field can not be empty</string>
+    <string name="second_activity">Second Activity:</string>
+    <string name="main_activity">Main Activity:</string>
+</resources>
