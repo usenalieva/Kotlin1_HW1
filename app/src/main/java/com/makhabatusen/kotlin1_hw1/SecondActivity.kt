@@ -1,5 +1,6 @@
 package com.makhabatusen.kotlin1_hw1
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -22,8 +23,8 @@ class SecondActivity : AppCompatActivity() {
             if (ui.editTextSecond.text.isNullOrBlank()) {
                 Toast.makeText(this, getString(R.string.cant_be_empty), Toast.LENGTH_SHORT).show()
             } else {
-                val intent = MainActivity.newIntent(this, ui.editTextSecond.text.toString())
-                startActivity(intent)
+                setResult(Activity.RESULT_OK, MainActivity.newIntent(this, ui.editTextSecond.text.toString()))
+                finish()
             }
         }
     }
